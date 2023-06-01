@@ -78,7 +78,7 @@
   let selectHeader = select("#header");
   if (selectHeader) {
     const headerScrolled = () => {
-      if (window.scrollY > 100) {
+      if (window.scrollY > 80) {
         selectHeader.classList.add("header-scrolled");
       } else {
         selectHeader.classList.remove("header-scrolled");
@@ -161,12 +161,24 @@
       }
     }
   });
+
   /**
-   * Initiate portfolio lightbox
+   * Testimonials slider
    */
-  // const portfolioLightbox = GLightbox({
-  //   selector: ".portfokio-lightbox",
-  // });
+  // new Swiper(".featuresSwiper", {});
+  new Swiper(".featuresSwiper", {
+    effect: "coverflow",
+    grabCursor: true,
+    slidesPerView: 3,
+    loop: true,
+    coverflowEffect: {
+      rotate: 50,
+      stretch: 0,
+      depth: 100,
+      modifier: 1,
+      slideShadows: true,
+    },
+  });
 
   /**
    * Testimonials slider
@@ -178,7 +190,7 @@
         slidesPerView: 3,
         spaceBetween: 15,
       },
-      
+
       550: {
         spaceBetween: 20,
         slidesPerView: 3,
@@ -202,7 +214,7 @@
     loop: true,
     autoplay: {
       delay: 2000,
-      disableOnInteraction: false
+      disableOnInteraction: false,
     },
     slidesPerView: "auto",
     pagination: {
@@ -215,7 +227,7 @@
         slidesPerView: 1,
         spaceBetween: 15,
       },
-      
+
       1200: {
         spaceBetween: 30,
         slidesPerView: 2.5,
