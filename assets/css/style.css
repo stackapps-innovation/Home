@@ -154,10 +154,11 @@ section {
 
 .header .logo {
   line-height: 0;
+  height: 50px;
 }
 
 .header .logo img {
-  max-height: 40px;
+  max-height: 50px;
   margin-right: 6px;
 }
 
@@ -277,10 +278,21 @@ section {
   line-height: 20px;
 }
 
+.getstarted:hover,
 .navbar .getstarted:hover,
+.getstarted:focus:hover,
 .navbar .getstarted:focus:hover {
   color: var(--bs-primary);
   background-color: transparent;
+}
+
+.btn-success {
+  padding: 9px 20px;
+}
+.btn-success:hover {
+  background-color: transparent;
+  border: 1px solid #198754;
+  color: #198754;
 }
 
 .navbar .dropdown ul {
@@ -612,13 +624,13 @@ main {
 }
 
 .btn-get-started {
-  margin-top: 16px;
   line-height: 0;
-  padding: 15px 40px;
+  padding: 10px 16px;
   border-radius: 100px;
   transition: 0.5s;
   color: #fff;
-  background: var(--bs-primary);
+  background-color: var(--bs-primary);
+  border: 1px solid var(--bs-primary);
   z-index: 1;
 }
 
@@ -634,6 +646,11 @@ main {
   transition: 0.3s;
 }
 
+.btn-get-started:hover {
+  color: var(--bs-primary);
+  background-color: var(--white);
+  border: 1px solid var(--bs-primary);
+}
 .btn-get-started:hover i {
   transform: translateX(5px);
 }
@@ -1047,6 +1064,7 @@ main {
   border: 1px solid transparent;
 }
 
+/* .features .feture-tabs .swiper-slide-active, */
 .features .feture-tabs .nav-link.active {
   background: #ffffff;
   border: 1px solid transparent;
@@ -1780,6 +1798,11 @@ main {
   box-shadow: none;
 }
 
+.lottie-player1 {
+  max-height: 350px;
+  height: 350px;
+}
+
 .faq .accordion-button:not(.collapsed) {
   background-color: none;
   background: none;
@@ -2092,12 +2115,17 @@ hr {
   background-color: var(--bs-primary);
   border-radius: 40px;
   padding: 10px 15px;
-  border: none;
+  border: 1px solid var(--bs-primary);
   white-space: nowrap;
   height: 40px;
   display: flex;
   align-items: center;
   gap: 10px;
+}
+.footer button.btn:hover {
+  color: var(--bs-primary);
+  background-color: var(--white);
+  border: 1px solid var(--bs-primary);
 }
 
 :not(.btn-check) + .btn:active {
@@ -2423,6 +2451,95 @@ hr {
   .navbar-mobile.navbar ul li.dropdown.__submenu ul .title {
     font-size: 18px;
   }
+  .features .envatoTabMain .envatoTab .swiper-button-prev,
+  .features .feture-tabs .exploreProduct .swiper-button-prev {
+    left: 0;
+  }
+  .features .envatoTabMain .envatoTab .swiper-button-next,
+  .features .feture-tabs .exploreProduct .swiper-button-next {
+    right: 0;
+  }
+  .features .envatoTabMain .envatoTab .swiper-button-prev::after,
+  .features .envatoTabMain .envatoTab .swiper-button-next::after,
+  .features .feture-tabs .exploreProduct .swiper-button-prev::after,
+  .features .feture-tabs .exploreProduct .swiper-button-next::after {
+    color: #012970;
+    font-size: 16px;
+    font-weight: 900;
+  }
+  .features .envatoTabMain .envatoTab .swiper-button-prev,
+  .features .envatoTabMain .envatoTab .swiper-button-next,
+  .features .feture-tabs .exploreProduct .swiper-button-prev,
+  .features .feture-tabs .exploreProduct .swiper-button-next {
+    background-color: var(--white);
+    height: 35px;
+    width: 35px;
+    border-radius: 4px;
+    opacity: 0;
+  }
+  .features .envatoTabMain .envatoTab:hover .swiper-button-prev,
+  .features .envatoTabMain .envatoTab:hover .swiper-button-next,
+  .features .feture-tabs .exploreProduct:hover .swiper-button-prev,
+  .features .feture-tabs .exploreProduct:hover .swiper-button-next {
+    opacity: 1;
+  }
+  .features .envatoTabMain .envatoTab .swiper-button-prev:hover,
+  .features .envatoTabMain .envatoTab .swiper-button-next:hover,
+  .features .feture-tabs .exploreProduct .swiper-button-prev:hover,
+  .features .feture-tabs .exploreProduct .swiper-button-next:hover {
+    background-color: var(--bs-primary);
+  }
+  .features .envatoTabMain .envatoTab .swiper-button-prev:hover::after,
+  .features .envatoTabMain .envatoTab .swiper-button-next:hover::after,
+  .features .feture-tabs .exploreProduct .swiper-button-prev:hover::after,
+  .features .feture-tabs .exploreProduct .swiper-button-next:hover::after {
+    color: var(--white);
+  }
+  .features .feture-tabs .swiper-slide .nav-item .nav-link img {
+    width: 70%;
+    min-height: 100px;
+    max-height: 200px;
+    margin: auto;
+    display: flex;
+  }
+  .features .feture-tabs .nav-link {
+    padding: 15px;
+  }
+  .feture-tabs-page .tab-content {
+    width: 100%;
+  }
+  .feture-tabs-page .nav .nav-link.active::after,
+  .feture-tabs-page .nav .nav-link.active::before {
+    display: none;
+  }
+  .feture-tabs-page .envatoTabMain .nav .nav-link.active {
+    border: 1px solid transparent;
+  }
+  .feture-tabs-page .tab-content .tab-pane {
+    padding: 20px;
+  }
+  .feture-tabs-page .tab-content .tab-pane hr {
+    margin: 20px -20px;
+  }
+  .feture-tabs-page .tab-content .tab-pane .header .sub-title {
+    margin-bottom: 0px;
+  }
+  .feture-tabs-page .nav .nav-link {
+    padding: 16px 8px;
+  }
+  .card {
+    padding: 15px 20px;
+  }
+  .features-page .hero {
+    padding-bottom: 80px;
+  }
+  .features-img .column-3 .banner-4 p {
+    font-size: 12px;
+    padding: 0;
+  }
+  .btn-get-started span {
+    font-size: 13px;
+  }
 }
 
 @media (max-width: 1200px) {
@@ -2443,6 +2560,7 @@ hr {
   .feture-tabs-page .tab-content .tab-pane .cms-title,
   .values .box h3,
   .faq .accordion-button,
+  .feture-tabs-page .tab-content .tab-pane .flutter h3,
   .services .service-box h3 {
     font-size: 22px;
   }
@@ -2519,5 +2637,19 @@ hr {
 
   .waveBottom {
     background-size: 50% 200px;
+  }
+
+  .features .feture-tabs .swiper-slide .nav-item .nav-link img {
+    width: 100%;
+  }
+
+  .features .feture-tabs .tab-content .prod-img {
+    height: 100%;
+    max-height: 250px;
+  }
+}
+@media (max-width: 550px) {
+  .feture-tabs-page .tab-content .tab-pane .header .sub-title {
+    font-size: 15px;
   }
 }

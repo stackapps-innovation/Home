@@ -179,6 +179,54 @@
       slideShadows: true,
     },
   });
+  /**
+   * exploreProduct slider
+   */
+  new Swiper(".exploreProduct", {
+    loop: true,
+    slidesPerView: 2,
+    spaceBetween: 10,
+    autoplay: {
+      delay: 2000,
+      disableOnInteraction: false,
+    },
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+  });
+  /**
+   * envatoTab slider
+   */
+  new Swiper(".envatoTab", {
+    loop: true,
+    slidesPerView: 2,
+    spaceBetween: 10,
+    breakpoints: {
+      320: {
+        slidesPerView: 1,
+        spaceBetween: 5,
+      },
+
+      500: {
+        spaceBetween: 10,
+        slidesPerView: 2,
+      },
+
+      992: {
+        spaceBetween: 10,
+        slidesPerView: 2,
+      }
+    },
+    // autoplay: {
+    //   delay: 2000,
+    //   disableOnInteraction: false,
+    // },
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+  });
 
   /**
    * Testimonials slider
