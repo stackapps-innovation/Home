@@ -133,6 +133,16 @@ section {
   letter-spacing: 0.2em;
   margin-top: 15px;
 }
+@media(max-width:992px){
+  #preloader .loader img {
+    height: 40px;
+    width: 40px;
+  }
+  #preloader .loader p {
+    font-size: 12px;
+    letter-spacing: 0.01em;
+  }
+}
 /* Load Icon */
 .load-icon {
   height: 20px;
@@ -201,8 +211,8 @@ section {
 .whatsapp {
   position: fixed;
   right: 15px;
+  bottom: 70px;
   z-index: 99999;
-  bottom: 15px;
   width: 40px;
   height: 40px;
   border-radius: 4px;
@@ -213,7 +223,7 @@ section {
   visibility: hidden;
   opacity: 0;
   right: 15px;
-  bottom: 70px;
+  bottom: 15px;
   z-index: 99999;
   background: var(--bs-primary);
   width: 40px;
@@ -796,6 +806,11 @@ main {
     margin-top: 80px;
   }
 
+  .hero .hero-img.ma-hero-img {
+    margin-top: 20px;
+    max-height: 300px;
+  }
+
   .hero .hero-img img {
     width: 80%;
   }
@@ -1173,6 +1188,10 @@ main {
   border-radius: 8px;
   transition: none;
   position: relative;
+}
+.features .feture-tabs .nav-link img{
+  width: 150px;
+  height: 105px;
 }
 .features .feture-tabs .nav-link:hover {
   border: 1px solid transparent;
@@ -2392,6 +2411,9 @@ hr {
   color: #f37916;
 }
 
+.footer .footer-top .footer-contact a {
+  color: var(--white);
+}
 .footer .footer-top .footer-contact p {
   line-height: 26px;
 }
@@ -2777,7 +2799,7 @@ hr {
   }
 
   .features .feture-tabs .tab-content .prod-img {
-    height: 100%;
+    /* height: 100%; */
     max-height: 250px;
   }
 }
