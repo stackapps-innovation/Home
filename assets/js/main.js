@@ -253,6 +253,11 @@
         slidesPerView: 6,
       },
     },
+    autoplay: {
+      delay: 2000,
+      disableOnInteraction: false,
+    },
+    loop:true,
   });
   /**
    * Testimonials slider
@@ -261,7 +266,7 @@
     speed: 600,
     loop: true,
     autoplay: {
-      delay: 2000,
+      delay: 3000,
       disableOnInteraction: false,
     },
     slidesPerView: "auto",
