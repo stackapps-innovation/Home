@@ -303,3 +303,15 @@
    */
   new PureCounter();
 })();
+
+/*=============================================
+=       Preloader          =
+=============================================*/
+const preloader = document.querySelector("#preloader");
+if (preloader) {
+    window.addEventListener("load", () => {
+        setTimeout(() => {
+            preloader.remove();
+        }, 500);
+    });
+}
