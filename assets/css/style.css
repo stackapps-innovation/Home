@@ -807,7 +807,7 @@ main {
   }
 
   .hero .hero-img.ma-hero-img {
-    margin-top: 20px;
+    /* margin-top: 20px; */
     max-height: 300px;
   }
 
@@ -1456,6 +1456,7 @@ main {
   outline: none;
   padding: 40px;
   padding-top: 60px;
+  min-height: 500px;
 }
 
 .feture-tabs-page .tab-content .tab-pane .header {
@@ -2406,9 +2407,10 @@ hr {
   display: inline-block;
   line-height: 1;
 }
-
+.footer .footer-top .footer-contact a:hover,
 .footer .footer-top .footer-links ul a:hover {
-  color: #f37916;
+  /* color: #f37916; */
+  text-decoration: underline;
 }
 
 .footer .footer-top .footer-contact a {
