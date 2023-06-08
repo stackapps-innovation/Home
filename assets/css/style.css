@@ -807,7 +807,7 @@ main {
   }
 
   .hero .hero-img.ma-hero-img {
-    /* margin-top: 20px; */
+    margin-top: 20px;
     max-height: 300px;
   }
 
@@ -2494,6 +2494,11 @@ hr {
     max-height: 400px;
     max-width: 500px;
     margin: auto;
+  }
+  .trust .card{
+    padding: 15px;
+    margin-top: -50px;
+    margin-bottom: -80px;
   }
   .features .feture-tabs .tab-content .tab-pane .prod-info {
     flex-direction: column;
