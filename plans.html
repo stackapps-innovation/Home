@@ -26,10 +26,24 @@
     <!-- Template Main CSS File -->
     <link href="assets/css/style.css" rel="stylesheet">
 
-
 </head>
 
 <body>
+
+    <!-- ======= Preloader ======= -->
+    <div id="preloader">
+        <div class="loader">
+            <img src="./assets/img/common/favicon.svg" alt="">
+            <div class="load-icon center">
+                <p>Loading</p>
+                <div class="dot">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!-- ======= Header ======= -->
     <header id="header" class="header fixed-top">
@@ -215,8 +229,16 @@
                             </li>
                         </ul>
                     </li>
-                    <li><a class="nav-link scrollto" href="./features.html">Docs</a></li>
-                    <li><a class="nav-link scrollto" href="./contact-us.html">Contact</a></li>
+                    <li><a class="nav-link scrollto" href="./stack-commerce.html">Documentation</a></li>
+                    <li><a class="nav-link scrollto d-block d-lg-none" href="./contact-us.html">
+                            <button
+                                class="getstarted d-inline-flex align-items-center m-0 justify-content-center align-self-center">
+                                Contact Us
+                                <i class="bi bi-arrow-right"></i>
+                            </button>
+                        </a>
+                    </li>
+                    
                     </ul>
                     <a href="./contact-us.html" class="d-none d-lg-block">
                         <button
@@ -437,7 +459,9 @@
                         <h3>
                             We are exclusive seller in codecanyon, Explore our products and purchase.
                         </h3>
-                        <button class="btn btn-primary">Explore Now <i class="bi bi-arrow-right"></i></button>
+                        <a href="">
+                            <button class="btn btn-primary">Explore Now <i class="bi bi-arrow-right"></i></button>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -463,11 +487,11 @@
                         <div class="col-lg-4 col-6 footer-links">
                             <h4>Company</h4>
                             <ul>
-                                <li><a href="#">About us</a></li>
-                                <li><a href="#">Contact us</a></li>
+                                <li><a href="./about-us.html">About us</a></li>
+                                <li><a href="./contact-us.html">Contact us</a></li>
                                 <li><a href="#">Service Policy</a></li>
                                 <li><a href="#">Privacy Policy</a></li>
-                                <li><a href="#">FAQ</a></li>
+                                <li><a href="customizations.html#FAQS">FAQ</a></li>
                             </ul>
                         </div>
 
@@ -481,8 +505,9 @@
                                 <br>
                                 &nbsp; &nbsp; &nbsp; &nbsp; Pin : 641301, India
                             </p>
-                            <img src="./assets/img/common/email.svg" alt=""> support@stackapps.net<br>
-
+                            <a href="#">
+                                <img src="./assets/img/common/email.svg" alt=""> support@stackapps.net<br>
+                            </a>
                         </div>
 
                     </div>
